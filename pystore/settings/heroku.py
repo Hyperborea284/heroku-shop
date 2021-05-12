@@ -1,6 +1,6 @@
 import environ
 
-from tutorialdjango.settings.base import *
+from pystore.settings.base import *
 
 env = environ.Env()
 
