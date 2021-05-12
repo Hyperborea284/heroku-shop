@@ -1,5 +1,4 @@
 import environ
-import os
 
 from pystore.settings.base import *
 
