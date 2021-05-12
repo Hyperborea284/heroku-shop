@@ -63,6 +63,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -214,3 +215,6 @@ ANYMAIL = {
     "MAILGUN_SENDER_DOMAIN" : "sandboxcbde6943f6d14c06974eb8a00f4b4e66.mailgun.org"
 }
 
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitesnoise.storage.CompressedManifestStaticFilesStorage'
