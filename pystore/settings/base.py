@@ -15,7 +15,7 @@ from pathlib import Path
 import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -28,9 +28,8 @@ SECRET_KEY = "(m8g@+-_3b!&9sfj%ld7@9oz+9vcjmb8937s2m&bd6$d)8!1w="
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'uf4yl3jh6vm2nw3g.ddns.net', 
-    '127.0.0.1',
-    '192.168.0.50']
+    'uf4yl3jh6vm2nw3g.ddns.net',
+]
 
 
 # Application definition
