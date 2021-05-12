@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Sair{% endblock %}
+
+{% block content %}
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <h2>Sair</h2>
+    <p></p>
+    <p></p>
+    <h3>Você tem certeza que deseja sair?</h3>
+    <p></p>
+    <p></p>
+    <form method="post" action="{% url 'account_logout' %}">
+        {% csrf_token %}
+        <button class="btn btn-danger" type="submit">Sair</button>
+    </form>
+{% endblock %}
+
