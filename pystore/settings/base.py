@@ -62,7 +62,6 @@ INSTALLED_APPS = [
     "orders.apps.OrdersConfig",
     "payments.apps.PaymentsConfig",
     "whitenoise.runserver_nostatic",
-    "django.contrib.staticfiles",
 ]
 
 MIDDLEWARE = [
